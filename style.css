@@ -214,3 +214,38 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Stile per le figure della galleria */
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--colore-testo);
+}
+/* Stile per la mappa */
+.map-container {
+  margin-bottom: 0.75rem;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+}
+
+.map-link {
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
