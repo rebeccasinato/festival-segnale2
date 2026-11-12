@@ -7,7 +7,7 @@
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
   --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-titoli: "Lora", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -44,6 +44,10 @@ a:focus {
 .site-header {
   padding: 1.25rem 0;
   border-bottom: 4px solid var(--colore-primario);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--colore-sfondo);
 }
 
 .brand {
@@ -248,4 +252,19 @@ figcaption {
 .map-link {
   font-size: 0.875rem;
   margin-bottom: 2rem;
+}
+
+/* Navigazione base a colonna (sotto i 600px) */
+.site-header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Navigazione a riga (dai 600px in su) */
+@media (min-width: 600px) {
+  .site-header nav {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }
